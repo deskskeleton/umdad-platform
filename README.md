@@ -126,6 +126,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgements
 
-- Flask framework
-- PostgreSQL database
-- Bootstrap for UI components
+- [oTree](https://www.otree.org/) - A powerful open-source framework for behavioral economics experiments which inspired our modular architecture and experiment flow
+- [z-Tree](https://www.ztree.uzh.ch/) - The Zurich Toolbox for Ready-made Economic Experiments
+- [alter_ego](https://github.com/mgbckr/alter_ego) - A toolkit for integrating LLMs into experimental games
+- [LEXI](https://github.com/stanford-policylab/LEXI) - LLM Experimentation Interface that influenced our approach to AI agent integration
+- [Flask](https://flask.palletsprojects.com/) - The web framework used for the backend
+- [PostgreSQL](https://www.postgresql.org/) - The database system for storing experiment data
+- [Bootstrap](https://getbootstrap.com/) - For responsive UI components
+- [Chart.js](https://www.chartjs.org/) - For data visualization in experiment results
+- [Docker](https://www.docker.com/) - For containerization and simplified deployment
+- [Maastricht University DSRI](https://docs.dh.unimaas.nl/category/dsri/) - Data Science Research Infrastructure for deployment
+- The behavioral economics research community for their open-source contributions and experimental methodologies 
