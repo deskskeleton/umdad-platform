@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+# Local development configuration
+instance/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Docker volumes
+postgres_data/
+
+# Logs
+*.log
+logs/
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+.tmp/
+tmp/

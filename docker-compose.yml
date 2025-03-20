@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # Web application service
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=experiment_db
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - SECRET_KEY=change-this-in-production
+      - DEBUG=True
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    restart: unless-stopped
+    command: python run.py
+
+  # PostgreSQL database service
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_DB=experiment_db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

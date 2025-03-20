@@ -1,0 +1,25 @@
+# Flask and web server
+Flask==2.3.3
+Werkzeug==2.3.7
+gunicorn==21.2.0
+
+# Database
+psycopg2-binary==2.9.7
+SQLAlchemy==2.0.20
+
+# Security and authentication
+passlib==1.7.4
+itsdangerous==2.1.2
+bcrypt==4.0.1
+
+# Utilities
+python-dotenv==1.0.0
+six==1.16.0
+PyJWT==2.8.0
+pytz==2023.3
+
+# Development and testing
+pytest==7.4.0
+pytest-flask==1.2.0
+black==23.7.0
+flake8==6.1.0
